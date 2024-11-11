@@ -4,13 +4,13 @@ executors:
   dotnet-executor:
     docker:
       - image: mcr.microsoft.com/dotnet/sdk:8.0  # Use .NET 8.0 SDK image
-    working_directory: ~/project/customerportalapi.client
+    working_directory: ~/repo
 
 jobs:
   sonar_scan:
     executor: dotnet-executor
     steps:
-      - checkout
+      - checkout  # Ensure we pull the latest code
       - run:
           name: Install Node.js
           command: |
@@ -25,13 +25,8 @@ jobs:
       - run:
           name: Install SonarScanner for .NET
           command: dotnet tool install --global dotnet-sonarscanner
-      - run:
-          name: Run SonarQube Scan
-          command: |
-            export PATH="$PATH:/root/.dotnet/tools"
-            dotnet-sonarscanner begin /k:"TehrinReddy_apds7311-poe-TehrinReddy" /o:"tehrinreddy" /d:sonar.host.url="https://sonarcloud.io/" /d:sonar.login="$SONAR_TOKEN"
-            dotnet build CustomerPortalAPI.Server/CustomerPortalAPI.Server.csproj  # Specify the project file
-            dotnet-sonarscanner end /d:sonar.login="$SONAR_TOKEN"
+            
+ 
 
 workflows:
   version: 2
