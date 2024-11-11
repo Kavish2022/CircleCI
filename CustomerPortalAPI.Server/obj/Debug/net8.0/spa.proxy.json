@@ -3,7 +3,7 @@
 "ServerUrl": "https://localhost:5173",
 "RedirectUrl": "",
 "LaunchCommand": "npm run dev",
-"WorkingDirectory": "C:\\Users\\lab_services_student\\source\\repos\\APDS\\CustomerPortalAPI.Server\\..\\customerportalapi.client",
+"WorkingDirectory": "C:\\Users\\lab_services_student\\source\\repos\\CustomerPortalAPI\\CustomerPortalAPI.Server\\..\\customerportalapi.client",
 "MaxTimeoutInSeconds": "120",
 "KeepRunning": "false"
 }

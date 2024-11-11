@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BAER+fID4yI=",
+  "dgSpecHash": "u3muORrEBC7P84aj7mQSgoBEZTniWsvbG6e8m5H1Rthv6lEwJD9mDRMbwlcu7lwOmq2Hp/01udapAXJ/uIQMYw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lab_services_student\\source\\repos\\APDS\\CustomerPortalAPI.Server\\CustomerPortalAPI.Server.csproj",
+  "projectFilePath": "C:\\Users\\lab_services_student\\source\\repos\\CustomerPortalAPI\\CustomerPortalAPI.Server\\CustomerPortalAPI.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lab_services_student\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\lab_services_student\\.nuget\\packages\\microsoft.aspnetcore.spaproxy\\8.0.10\\microsoft.aspnetcore.spaproxy.8.0.10.nupkg.sha512",

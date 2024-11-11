@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lab_services_student\\source\\repos\\APDS\\CustomerPortalAPI.Server\\CustomerPortalAPI.Server.csproj": {}
+    "C:\\Users\\lab_services_student\\source\\repos\\CustomerPortalAPI\\CustomerPortalAPI.Server\\CustomerPortalAPI.Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lab_services_student\\source\\repos\\APDS\\CustomerPortalAPI.Server\\CustomerPortalAPI.Server.csproj": {
+    "C:\\Users\\lab_services_student\\source\\repos\\CustomerPortalAPI\\CustomerPortalAPI.Server\\CustomerPortalAPI.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lab_services_student\\source\\repos\\APDS\\CustomerPortalAPI.Server\\CustomerPortalAPI.Server.csproj",
+        "projectUniqueName": "C:\\Users\\lab_services_student\\source\\repos\\CustomerPortalAPI\\CustomerPortalAPI.Server\\CustomerPortalAPI.Server.csproj",
         "projectName": "CustomerPortalAPI.Server",
-        "projectPath": "C:\\Users\\lab_services_student\\source\\repos\\APDS\\CustomerPortalAPI.Server\\CustomerPortalAPI.Server.csproj",
+        "projectPath": "C:\\Users\\lab_services_student\\source\\repos\\CustomerPortalAPI\\CustomerPortalAPI.Server\\CustomerPortalAPI.Server.csproj",
         "packagesPath": "C:\\Users\\lab_services_student\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lab_services_student\\source\\repos\\APDS\\CustomerPortalAPI.Server\\obj\\",
+        "outputPath": "C:\\Users\\lab_services_student\\source\\repos\\CustomerPortalAPI\\CustomerPortalAPI.Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,11 +38,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -82,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
