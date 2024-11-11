@@ -4,7 +4,7 @@ executors:
   dotnet-executor:
     docker:
       
-image: mcr.microsoft.com/dotnet/sdk:6.0 # Adjust to your .NET version
+image: mcr.microsoft.com/dotnet/sdk:8.0  # Use .NET 8.0 SDK image
   working_directory: ~/repo
 
 jobs:
@@ -14,11 +14,16 @@ jobs:
       
 checkout
 run:
-      name: Install Dependencies
-      command: dotnet restore
+      name: Install Node.js
+      command: |
+        curl -sL https://deb.nodesource.com/setup_18.x | bash -
+        apt-get install -y nodejs
 run:
-    name: Build Project
-    command: dotnet build
+    name: Install Dependencies
+    command: dotnet restore CustomerPortalAPI.Server/CustomerPortalAPI.Server.csproj  # Specify the project file
+run:
+  name: Build Project
+  command: dotnet build CustomerPortalAPI.Server/CustomerPortalAPI.Server.csproj  # Specify the project file
 run:
   name: Install SonarScanner for .NET
   command: dotnet tool install --global dotnet-sonarscanner
@@ -26,8 +31,8 @@ run:
   name: Run SonarQube Scan
   command: |
     export PATH="$PATH:/root/.dotnet/tools"
-    dotnet-sonarscanner begin /k:"your-project-key" /d:sonar.host.url="https://sonarcloud.io/" /d:sonar.login="$SONAR_TOKEN"
-    dotnet build
+    dotnet-sonarscanner begin /k:"Kavish2022_CircleCI" /o:"kavish2022" /d:sonar.host.url="https://sonarcloud.io/" /d:sonar.login="$SONAR_TOKEN"
+    dotnet build CustomerPortalAPI.Server/CustomerPortalAPI.Server.csproj  # Specify the project file
     dotnet-sonarscanner end /d:sonar.login="$SONAR_TOKEN"
 
 workflows:
